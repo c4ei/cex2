@@ -6,15 +6,20 @@
   "private": true,
   "homepage": "http://.",
   "engines": {
+    "node": "16.16.0"
+  },
+  "engines_old": {
     "node": "8.11.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "export PORT=3030 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy:ganache": "truffle migrate --reset",
-    "seed-exchange": "truffle exec scripts/seed-exchange.js"
+    "seed-exchange": "truffle exec scripts/seed-exchange.js",
+    "deploy:c4ei": "truffle migrate --reset --network c4ei",
+    "seed-c4ei": "truffle exec scripts/seed-exchange.js --network c4ei"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.3",
@@ -65,9 +70,9 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ILESKOV/LESKOVDEXV1.git"
+    "url": "git+https://github.com/ISAWONV/SAWONVDEXV1.git"
   },
   "bugs": {
-    "url": "https://github.com/ILESKOV/LESKOVDEXV1/issues"
+    "url": "https://github.com/ISAWONV/SAWONVDEXV1/issues"
   }
 }

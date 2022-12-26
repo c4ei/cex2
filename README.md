@@ -1,5 +1,19 @@
+truffle migrate --reset --network c4ei
+account : brg.c4ei.net
+site : ico.c4ei.net
+
+MIG      : 0x484E55FD337Bff08761993A8AB19208ceDDaa764
+CEIK     : 0x937BD55eE341F996cf7d61E99b639965929094b7
+SAWONdex : 0xEb50C6494049B8c09d420eA852cD5695bdfC51b8
+
+npm run seed-exchange
+yarn seed-exchange --network c4ei
+
+Token fetched 0x937BD55eE341F996cf7d61E99b639965929094b7
+Exchange fetched 0xEb50C6494049B8c09d420eA852cD5695bdfC51b8
+
 # LeskoExchange
->Lesko Exchange with ESKO ERC-20 standard token
+>Lesko Exchange with CEIK ERC-20 standard token
 >Video explanation [_here_](https://drive.google.com/file/d/13waCMZJIXLVzaYtnbivB_x1prBfJPPPY/view?usp=sharing). 
 
 ## 📁 Table of Contents
@@ -14,9 +28,9 @@
 
 
 ## General Information
-- The LESKO is an exchange for trading ETH/ESKO
-- Connect with your wallet, deposit ETH or ESKO token and trade them
-- User can create orders, fill and cancel them, also chart of ETH/ESKO price action is available
+- The CEIK is an exchange for trading ETH/CEIK
+- Connect with your wallet, deposit ETH or CEIK token and trade them
+- User can create orders, fill and cancel them, also chart of ETH/CEIK price action is available
 
 
 ## Technologies Used (more in dependencies)
@@ -31,11 +45,11 @@
 
 ## Features
 List the ready features here:
-- User can connect to exchange via wallet and deposit / withdraw ETH or ESKO token
+- User can connect to exchange via wallet and deposit / withdraw ETH or CEIK token
 - User can create / cancell and fill orders
-- User can buy / sell ETH or ESKO tokens
+- User can buy / sell ETH or CEIK tokens
 - User can check all trade history of the exchange
-- User can see ETH / ESKO price action in integrated chart
+- User can see ETH / CEIK price action in integrated chart
 
 ## Screenshots
 ![Example screenshot](./helpers/Screenshot.png)
@@ -87,5 +101,5 @@ Room for improvement:
 - Improve UI and UX
 
 ## Contact
-Created by [@LESKOV](https://www.linkedin.com/in/ivan-leskov-4b5664189/) - feel free to contact me!
+Created by [@SAWONV](https://www.linkedin.com/in/ivan-leskov-4b5664189/) - feel free to contact me!
 

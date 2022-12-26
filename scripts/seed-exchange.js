@@ -14,8 +14,8 @@ const wait = (seconds) => {
 };
 
 //Contracts
-const Token = artifacts.require("ESKO");
-const Exchange = artifacts.require("LESKOdex");
+const Token = artifacts.require("CEIK");
+const Exchange = artifacts.require("SAWONdex");
 
 module.exports = async function (callback) {
   try {

@@ -6,26 +6,40 @@ const { PRIVATE_KEY, GOERLI_API, MAINNET_API, MUMBAI_API } = process.env;
 
 module.exports = {
   networks: {
+    // development: {
+    //   host: "127.0.0.1",
+    //   port: 7545,
+    //   network_id: "*", //  Match any network id
+    // },
     development: {
-      host: "127.0.0.1",
-      port: 7545,
-      network_id: "*", //  Match any network id
+      provider: function() {
+        return new HDWalletProvider(PRIVATE_KEY, "http://192.168.1.186:21004/");
+      },
+      network_id: "21004",
     },
-    goerli: {
-      provider: () => new HDWalletProvider(PRIVATE_KEY, GOERLI_API),
-      network_id: 599,
-      skipDryRun: true,
+    c4ei: {
+      provider: function() {
+        return new HDWalletProvider(PRIVATE_KEY, "http://192.168.1.186:21004/");
+      },
+      // host: "192.168.1.186",
+      // port: 21004,
+      network_id: "21004", //  Match any network id
     },
-    ethereum: {
-      provider: () => new HDWalletProvider(PRIVATE_KEY, MAINNET_API),
-      network_id: 1,
-      skipDryRun: true,
-    },
-    matic: {
-      provider: () => new HDWalletProvider(PRIVATE_KEY, MUMBAI_API),
-      network_id: 80001,
-      skipDryRun: true,
-    },
+    // goerli: {
+    //   provider: () => new HDWalletProvider(PRIVATE_KEY, GOERLI_API),
+    //   network_id: 599,
+    //   skipDryRun: true,
+    // },
+    // ethereum: {
+    //   provider: () => new HDWalletProvider(PRIVATE_KEY, MAINNET_API),
+    //   network_id: 1,
+    //   skipDryRun: true,
+    // },
+    // matic: {
+    //   provider: () => new HDWalletProvider(PRIVATE_KEY, MUMBAI_API),
+    //   network_id: 80001,
+    //   skipDryRun: true,
+    // },
   },
   contracts_directory: "./src/contracts",
   contracts_build_directory: "./src/abis/",

@@ -1,5 +1,5 @@
-const Token = artifacts.require("ESKO");
-const Exchange = artifacts.require("LESKOdex");
+const Token = artifacts.require("CEIK");
+const Exchange = artifacts.require("SAWONdex");
 
 module.exports = async function (deployer) {
   const accounts = await web3.eth.getAccounts();

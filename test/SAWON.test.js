@@ -2,13 +2,13 @@ const EVM_REVERT = "VM Exception while processing transaction: revert";
 const tokens = (n) => {
   return new web3.utils.BN(web3.utils.toWei(n.toString(), "ether"));
 };
-const Token = artifacts.require("./ESKO");
+const Token = artifacts.require("./CEIK");
 
 require("chai").use(require("chai-as-promised")).should();
 
 contract("Token", ([deployer, receiver, exchange]) => {
-  const name = "ESKO";
-  const symbol = "ESKO";
+  const name = "CEIK";
+  const symbol = "CEIK";
   const decimals = "18";
   const totalSupply = tokens(1000000).toString();
   let token;
