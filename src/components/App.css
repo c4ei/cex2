@@ -138,6 +138,7 @@
 
 .card-body .price-chart {
   height:100%;
+  max-height: 400px;
   padding-bottom: 60px;
 }
 
