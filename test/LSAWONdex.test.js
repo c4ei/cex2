@@ -508,7 +508,7 @@ contract("Exchange", ([deployer, feeAccount, user1, user2]) => {
           tokens(10),
           { from: user1 }
         );
-        // user2 deposit 1 ETHER + fee cost (.1 ETH) to the exchange
+        // user2 deposit 1 ETHER + fee cost (.1 C4EI) to the exchange
         await exchange.depositEther({ from: user2, value: ether(1.1) });
         // user2 fills the order
         await exchange.fillOrder("1", { from: user2 });

@@ -61,7 +61,7 @@ const showForm = (props) => {
           </thead>
           <tbody>
             <tr>
-              <td>ETH</td>
+              <td>C4EI</td>
               <td>{etherBalance}</td>
               <td>{exchangeEtherBalance}</td>
             </tr>
@@ -75,7 +75,7 @@ const showForm = (props) => {
           <div className="col-12 col-sm pr-sm-2">
             <input
             type="text"
-            placeholder="ETH Amount"
+            placeholder="C4EI Amount"
             onChange={(e) => dispatch( etherDepositAmountChanged(e.target.value) ) }
             className="form-control form-control-sm bg-dark text-white"
             required />
@@ -126,7 +126,7 @@ const showForm = (props) => {
           </thead>
           <tbody>
             <tr>
-              <td>ETH</td>
+              <td>C4EI</td>
               <td>{etherBalance}</td>
               <td>{exchangeEtherBalance}</td>
             </tr>
@@ -140,7 +140,7 @@ const showForm = (props) => {
           <div className="col-12 col-sm pr-sm-2">
             <input
             type="text"
-            placeholder="ETH Amount"
+            placeholder="C4EI Amount"
             onChange={(e) => dispatch( etherWithdrawAmountChanged(e.target.value) )}
             className="form-control form-control-sm bg-dark text-white"
             required />
