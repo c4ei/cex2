@@ -1,15 +1,13 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
 import { accountSelector } from '../store/selectors'
-import logo from '../images/lesko.png' 
-
-
+import logo from '../images/c4eix256tLogo.png'
 
 class Navbar extends Component{
   render(){
     return(
       <nav className="navbar navbar-expand-lg navbar-dark">
-          <a className="navbar-brand" href="#/"><img src={logo} width="127" height="32" alt=""></img>
+          <a className="navbar-brand" href="/"><img src={logo} height="32" alt="ico.c4ei.net"></img>
           </a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -18,7 +16,8 @@ class Navbar extends Component{
               <li className="nav-item">
                 <a
                  className="nav-link small" 
-                 href={`https://etherscan.io/address/${this.props.account}`}
+                //  href={`https://etherscan.io/address/${this.props.account}`}
+                href={`https://exp.c4ei.net/address/${this.props.account}`}
                  target="_blank"
                  rel="noopener noreferrer"
                  >
