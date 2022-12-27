@@ -44,25 +44,26 @@ const showForm = (props) => {
             makeBuyOrder(dispatch, exchange, token, web3, buyOrder, account)
           }}>
           <div className="form-group small">
-            <label>Buy Amount (CEIK)</label>
+            <label>Buy Price (C4EI)</label>
             <div className="input-group">
               <input
-                type="text"
+                type="number"
                 className="form-control form-control-sm bg-dark text-white"
-                placeholder="Buy Amount"
-                onChange={(e) => dispatch( buyOrderAmountChanged( e.target.value ) )}
+                placeholder="Buy Price"
+                onChange={(e) => dispatch( buyOrderPriceChanged( e.target.value ) )}
                 required
               />
             </div>
           </div>
+
           <div className="form-group small">
-            <label>Buy Price</label>
+            <label>Buy Amount (CEIK)</label>
             <div className="input-group">
               <input
-                type="text"
+                type="number"
                 className="form-control form-control-sm bg-dark text-white"
-                placeholder="Buy Price"
-                onChange={(e) => dispatch( buyOrderPriceChanged( e.target.value ) )}
+                placeholder="Buy Amount"
+                onChange={(e) => dispatch( buyOrderAmountChanged( e.target.value ) )}
                 required
               />
             </div>
@@ -80,25 +81,25 @@ const showForm = (props) => {
           makeSellOrder(dispatch, exchange, token, web3, sellOrder, account)
         }}>
         <div className="form-group small">
-          <label>Sell Amount(CEIK)</label>
+          <label>Sell Price(C4EI)</label>
           <div className="input-group">
             <input
-              type="text"
+              type="number"
               className="form-control form-control-sm bg-dark text-white"
-              placeholder="Sell amount"
-              onChange={(e) => dispatch( sellOrderAmountChanged( e.target.value ) )}
+              placeholder="Sell Price"
+              onChange={(e) => dispatch( sellOrderPriceChanged( e.target.value ) )}
               required
             />
           </div>
         </div>
         <div className="form-group small">
-          <label>Sell Price</label>
+          <label>Sell Amount(CEIK)</label>
           <div className="input-group">
             <input
-              type="text"
+              type="number"
               className="form-control form-control-sm bg-dark text-white"
-              placeholder="Sell Price"
-              onChange={(e) => dispatch( sellOrderPriceChanged( e.target.value ) )}
+              placeholder="Sell amount"
+              onChange={(e) => dispatch( sellOrderAmountChanged( e.target.value ) )}
               required
             />
           </div>

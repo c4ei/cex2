@@ -40,6 +40,11 @@ const showOrderBook = (props)=>{
   const { orderBook } = props
   return(
      <tbody>
+      <tr>
+      <th>CEIK</th>
+      <th>CEIK/C4EI</th>
+      <th>C4EI</th>
+      </tr>
       { orderBook.sellOrders.map((order)=> renderOrder(order, props)) }
       <tr>
       <th>CEIK</th>
