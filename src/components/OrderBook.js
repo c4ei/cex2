@@ -41,16 +41,14 @@ const showOrderBook = (props)=>{
   return(
      <tbody>
       <tr>
-      <th>CEIK</th>
-      <th>CEIK/C4EI</th>
-      <th>C4EI</th>
+      <th>CEIK(Amount)</th>
+      {/* <th>CEIK/C4EI(Price)</th> */}
+      <th>CEIK(Price)</th>
+      <th>C4EI(Amount)</th>
       </tr>
+      <tr style={{ height:'1px',color:'black'}}><td colspan="3" bgcolor="white">{/* Sell */}</td></tr>
       { orderBook.sellOrders.map((order)=> renderOrder(order, props)) }
-      <tr>
-      <th>CEIK</th>
-      <th>CEIK/C4EI</th>
-      <th>C4EI</th>
-      </tr>
+      <tr style={{ height:'1px',color:'black'}}><td colspan="3" bgcolor="white">{/* Buy */}</td></tr>
       { orderBook.buyOrders.map((order)=> renderOrder(order, props)) }
      </tbody>
     )
