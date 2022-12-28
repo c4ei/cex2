@@ -46,9 +46,9 @@ const showOrderBook = (props)=>{
       <th>CEIK(Price)</th>
       <th>C4EI(Amount)</th>
       </tr>
-      <tr style={{ height:'1px',color:'black'}}><td colspan="3" bgcolor="white">{/* Sell */}</td></tr>
+      <tr style={{ height:'1px',color:'black'}}><td colSpan="3" bgcolor="white">{/* Sell */}</td></tr>
       { orderBook.sellOrders.map((order)=> renderOrder(order, props)) }
-      <tr style={{ height:'1px',color:'black'}}><td colspan="3" bgcolor="white">{/* Buy */}</td></tr>
+      <tr style={{ height:'1px',color:'black'}}><td colSpan="3" bgcolor="white">{/* Buy */}</td></tr>
       { orderBook.buyOrders.map((order)=> renderOrder(order, props)) }
      </tbody>
     )
