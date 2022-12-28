@@ -74,7 +74,7 @@ const showForm = (props) => {
         }}>
           <div className="col-12 col-sm pr-sm-2">
             <input
-            type="number"
+            type="number" step="0.0001"
             placeholder="C4EI Amount"
             onChange={(e) => dispatch( etherDepositAmountChanged(e.target.value) ) }
             className="form-control form-control-sm bg-dark text-white"
@@ -101,7 +101,7 @@ const showForm = (props) => {
         }}>
           <div className="col-12 col-sm pr-sm-2">
             <input
-            type="number"
+            type="number" step="0.0001"
             placeholder="DAPP Amount"
             onChange={(e) => dispatch( tokenDepositAmountChanged(e.target.value) )}
             className="form-control form-control-sm bg-dark text-white"
@@ -139,7 +139,7 @@ const showForm = (props) => {
         }}>
           <div className="col-12 col-sm pr-sm-2">
             <input
-            type="number"
+            type="number" step="0.0001"
             placeholder="C4EI Amount"
             onChange={(e) => dispatch( etherWithdrawAmountChanged(e.target.value) )}
             className="form-control form-control-sm bg-dark text-white"
@@ -166,7 +166,7 @@ const showForm = (props) => {
         }}>
           <div className="col-12 col-sm pr-sm-2">
             <input
-            type="number"
+            type="number" step="0.0001"
             placeholder="DAPP Amount"
             onChange={(e) => dispatch( tokenWithdrawAmountChanged(e.target.value) )}
             className="form-control form-control-sm bg-dark text-white"

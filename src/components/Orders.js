@@ -47,7 +47,7 @@ const showForm = (props) => {
             <label>Buy Price (C4EI)</label>
             <div className="input-group">
               <input
-                type="number"
+                type="number" step="0.0001"
                 className="form-control form-control-sm bg-dark text-white"
                 placeholder="Buy Price"
                 onChange={(e) => dispatch( buyOrderPriceChanged( e.target.value ) )}
@@ -60,7 +60,7 @@ const showForm = (props) => {
             <label>Buy Amount (CEIK)</label>
             <div className="input-group">
               <input
-                type="number"
+                type="number" step="0.0001"
                 className="form-control form-control-sm bg-dark text-white"
                 placeholder="Buy Amount"
                 onChange={(e) => dispatch( buyOrderAmountChanged( e.target.value ) )}
@@ -84,7 +84,7 @@ const showForm = (props) => {
           <label>Sell Price(C4EI)</label>
           <div className="input-group">
             <input
-              type="number"
+              type="number" step="0.0001"
               className="form-control form-control-sm bg-dark text-white"
               placeholder="Sell Price"
               onChange={(e) => dispatch( sellOrderPriceChanged( e.target.value ) )}
@@ -96,7 +96,7 @@ const showForm = (props) => {
           <label>Sell Amount(CEIK)</label>
           <div className="input-group">
             <input
-              type="number"
+              type="number" step="0.0001"
               className="form-control form-control-sm bg-dark text-white"
               placeholder="Sell amount"
               onChange={(e) => dispatch( sellOrderAmountChanged( e.target.value ) )}
